@@ -1,0 +1,11 @@
+inherit_gem:
+  mad_rubocop: .rubocop.yml
+
+# Styles that are modified from the defaults
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'coverage/**/*'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.6
