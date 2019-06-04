@@ -12,6 +12,7 @@ require "maskerade/version"
   spec.summary       = "Credit card masker"
   spec.description   = "Credit card masker with support for major credit cards and luhn check"
   spec.homepage      = "https://github.com/mxenabled/maskerade"
+  spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
