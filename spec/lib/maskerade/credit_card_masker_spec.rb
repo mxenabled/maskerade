@@ -21,10 +21,10 @@ require "spec_helper"
         "starbucks store #555 1-800-555-5555",
         "business XXXX XXXX XXXX 1234 1234567890123456",
         "4111111111111112", # fails luhn test
-        "4 1 3-11 93 3-1-2", # old code used to mask this
-        "4        2      2", # old code used to mask this
-        "677189---------3", # old code used to mask this
-        "30888778502353" # old code used to mask this (wrong length; should be 16 not 14)
+        "4 1 3-11 93 3-1-2",
+        "4        2      2",
+        "677189---------3",
+        "30888778502353" # wrong length; should be 16 not 14
       ].each do |value|
         it { expect(subject.mask(value)).to eq(value) }
       end
